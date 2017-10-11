@@ -1,0 +1,13 @@
+{
+  "name": "atthemeglossarybot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "8.6.0"
+  },
+  "author": "t.me/snejugal",
+  "license": "ISC",
+  "dependencies": {
+    "telegraf": "^3.12.1"
+  }
+}

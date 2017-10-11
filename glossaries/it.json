@@ -1,0 +1,11 @@
+{
+  "windowbackgroundwhite": {
+    "correctWriting": "windowBackgroundWhite",
+    "text": "{{correctWriting}} imposta lo sfondo di quasi tutte le schermate tranne lo sfondo delle chat. Per esempio imposta lo sfondo nella lista delle chat o lo sfondo delle sezioni nella pagina delle Impostazioni. Inoltre questa variabile imposta il pannello in basso al lettore musicale di Telegram.",
+    "image": {
+      "url": "http://telegra.ph/file/47a87c5f3dc9732e2bc63.png",
+      "caption": "L'area rossa mette in evidenza \"windowBackgroundWhite\", l'area rossa invece \"windowBackgroundGray\""
+    },
+    "link": "http://telegra.ph/Glossario-variabili-per-temi-di-Telegram-Backgrounds-10-09"
+  }
+}

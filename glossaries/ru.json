@@ -1,0 +1,38 @@
+{
+  "windowbackgroundwhiteblacktext": {
+    "correctWriting": "windowBackgroundWhiteBlackText",
+    "text": "{{correctWriting}} устанавливает цвет практически всего текста в приложении. <b>Будьте внимательны:</b> цвет заголовках в результатах инлайн-бота также устанавливается этой переменной, хотя фон результатов устанавливается chat_messagePanelBackground, а не windowBackgroundWhite. Подумайте о том, чтобы задавать chat_messagePanelBackground и windowBackgroundWhite один и тот же цвет, или проверяйте читабельность результатов бота.",
+    "image": {
+      "url": "http://telegra.ph/file/58a52e0628673beb412c9.png",
+      "caption": "Красное — windowBackgroundWhiteBlackText"
+    },
+    "link": "http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-Androide-Tekst-10-03"
+  },
+  "windowbackgroundgrayshadow": {
+    "correctWriting": "windowBackgroundGrayShadow",
+    "text": "{{correctWriting}} задает цвет тени секций как в Настройках.",
+    "image": {
+      "url": "http://telegra.ph/file/b07d55cd8c66ff2be7748.png",
+      "caption": "Красное — graySection, синее — windowBackgroundGrayShadow, зеленое — windowBackgroundWhiteIcon"
+    },
+    "link": "http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-09-29"
+  },
+  "windowbackgroundwhiteicon": {
+    "correctWriting": "windowBackgroundWhiteIcon",
+    "text": "{{correctWriting}} задает цвет иконок на экране, как New message.",
+    "image": {
+      "url": "http://telegra.ph/file/b07d55cd8c66ff2be7748.png",
+      "caption": "Красное — graySection, синее — windowBackgroundGrayShadow, зеленое — windowBackgroundWhiteIcon"
+    },
+    "link": "http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-09-29"
+  },
+  "graysection": {
+    "correctWriting": "graySection",
+    "text": "{{correctWriting}} задает цвет фона заголовка, как «Contacts» на экране нового сообщения. Заголовок на этой шапке задается windowBackgroumdWhiteGrayText2.",
+    "image": {
+      "url": "http://telegra.ph/file/b07d55cd8c66ff2be7748.png",
+      "caption": "Красное — graySection, синее — windowBackgroundGrayShadow, зеленое — windowBackgroundWhiteIcon"
+    },
+    "link": "http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-09-29"
+  }
+}
