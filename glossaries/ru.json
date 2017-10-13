@@ -13,7 +13,7 @@
     "text": "{{correctWriting}} задает цвет тени секций как в Настройках.",
     "image": {
       "url": "http://telegra.ph/file/b07d55cd8c66ff2be7748.png",
-      "caption": "Красное — graySection, синее — windowBackgroundGrayShadow, зеленое — windowBackgroundWhiteIcon"
+      "caption": "Синее — windowBackgroundGrayShadow"
     },
     "link": "http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-09-29"
   },
@@ -22,7 +22,7 @@
     "text": "{{correctWriting}} задает цвет иконок на экране, как New message.",
     "image": {
       "url": "http://telegra.ph/file/b07d55cd8c66ff2be7748.png",
-      "caption": "Красное — graySection, синее — windowBackgroundGrayShadow, зеленое — windowBackgroundWhiteIcon"
+      "caption": "Зеленое — windowBackgroundWhiteIcon"
     },
     "link": "http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-09-29"
   },
@@ -31,8 +31,107 @@
     "text": "{{correctWriting}} задает цвет фона заголовка, как «Contacts» на экране нового сообщения. Заголовок на этой шапке задается windowBackgroumdWhiteGrayText2.",
     "image": {
       "url": "http://telegra.ph/file/b07d55cd8c66ff2be7748.png",
-      "caption": "Красное — graySection, синее — windowBackgroundGrayShadow, зеленое — windowBackgroundWhiteIcon"
+      "caption": "Красное — graySection"
     },
     "link": "http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-09-29"
+  },
+  "windowbackgroundwhitehinttext": {
+    "correctWriting": "windowBackgroundWhiteHintText",
+    "text": "{{correctWriting}} задается цвет вводимого заполнителя — это текст, который Вы видете перед тем как что-либо ввели",
+    "image": {
+      "url": "http://telegra.ph/file/5ed1d4e705520a96e7ce4.png",
+      "caption": "Красное — windowBackgroundWhiteHintText"
+    },
+    "link": "http%3A%2F%2Ftelegra.ph%2FSlovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29%23%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BF%D0%BE%D0%BB%D1%8F"
+  },
+  "windowbackgroundwhiteinputfield": {
+    "correctWriting": "windowbackgroundwhiteinputfield",
+    "text": "{{correctWriting}} задает цвет нижней границы когда ввод неактивен.",
+    "image": {
+      "url": "http://telegra.ph/file/5ed1d4e705520a96e7ce4.png",
+      "caption": "Cинее — windowBackgroundWhiteInputField"
+    },
+    "link": "http%3A%2F%2Ftelegra.ph%2FSlovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29%23%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BF%D0%BE%D0%BB%D1%8F"
+  },
+  "windowbackgroundwhiteinputfieldactivated": {
+    "correctWriting": "windowBackgroundWhiteInputFieldActivated",
+    "text": "{{correctWriting}} задает цвет нижней границы когда ввод активен.",
+    "image": {
+      "url": "http://telegra.ph/file/5ed1d4e705520a96e7ce4.png",
+      "caption": "Зеленое — windowBackgroundWhiteInputFieldActivated"
+    },
+    "link": "http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29%23%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BF%D0%BE%D0%BB%D1%8F"
+  },
+  "switchtrack": {
+    "correctWriting": "switchTrack",
+    "text": "{{correctWriting}} задает цвет фона переключателя когда переключатель выключен.",
+    "image": {
+      "url": "http://telegra.ph/file/a35d290013ac1567734a2.png",
+      "caption": "Cинее — switchTrack"
+    },
+    "link": "http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%9F%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D1%82%D0%B5%D0%BB%D1%8C"
+  },
+  "switchthumb": {
+    "correctWriting": "switchThumb",
+    "text": "{{correctWriting}} задает цвет кнопки переключателя — кружочка на конце переключателя — когда он выключен",
+    "image": {
+      "url": "http://telegra.ph/file/a35d290013ac1567734a2.png",
+      "caption": "Красное — switchThumb"
+    },
+    "link": "http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%9F%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D1%82%D0%B5%D0%BB%D1%8C"
+  },
+  "switchtrackchecked": {
+    "correctWriting": "switchTrackChecked",
+    "text": "{{correctWriting}} задает цвет фона переключателя, когда он включен.",
+    "image": {
+      "url": "http://telegra.ph/file/a35d290013ac1567734a2.png",
+      "caption": "Зеленое — switchTrackChecked"
+    },
+    "link": "http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%9F%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D1%82%D0%B5%D0%BB%D1%8C"
+  },
+  "switchthumbchecked": {
+    "correctWriting": "switchThumbChecked",
+    "text": "{{correctWriting}} задает цвет кнопки переключателя, когда он включен.",
+    "image": {
+      "url": "http://telegra.ph/file/a35d290013ac1567734a2.png",
+      "caption": "Розовое — switchThumbChecked"
+    },
+    "link": "http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%9F%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D1%82%D0%B5%D0%BB%D1%8C"
+  },
+  "checkboxsquareunchecked": {
+    "correctWriting": "checkboxSquareUnchecked",
+    "text": "{{correctWriting}} задает обводку чекбокса, когда он без галки.",
+    "image": {
+      "url": "http://telegra.ph/file/6abb940db3ab21e3bef63.png",
+      "caption": "Красное — checkboxSquareUnchecked"
+    },
+    "link": "http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%A7%D0%B5%D0%BA%D0%B1%D0%BE%D0%BA%D1%81"
+  },
+  "checkboxsquaredisabled": {
+    "correctWriting": "checkboxSquareDisabled",
+    "text": "{{correctWriting}} задает фон чекбокса, когда он без галки. Как в Настройках группы, которая не переделана в супергруппу.",
+    "image": {
+      "url": "http://telegra.ph/file/6abb940db3ab21e3bef63.png",
+      "caption": "Оранжевое — checkboxSquareDisabled"
+    },
+    "link": "http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%A7%D0%B5%D0%BA%D0%B1%D0%BE%D0%BA%D1%81"
+  },
+  "checkboxsquarebackground": {
+    "correctWriting": "checkboxSquareBackground",
+    "text": "{{correctWriting}} задает фон чекбокса с галкой.",
+    "image": {
+      "url": "http://telegra.ph/file/6abb940db3ab21e3bef63.png",
+      "caption": "Cинее — checkboxSquareBackground"
+    },
+    "link": "http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%A7%D0%B5%D0%BA%D0%B1%D0%BE%D0%BA%D1%81"
+  },
+  "checkboxsquarecheck": {
+    "correctWriting": "checkboxSquareCheck",
+    "text": "{{correctWriting}} задает цвет галки в чекбоксе",
+    "image": {
+      "url": "http://telegra.ph/file/6abb940db3ab21e3bef63.png",
+      "caption": "Зеленое — checkboxSquareCheck"
+    },
+    "link": "http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%A7%D0%B5%D0%BA%D0%B1%D0%BE%D0%BA%D1%81"
   }
 }
