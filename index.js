@@ -62,6 +62,40 @@ const Telegraf = require("telegraf"),
       return text.trim().toLowerCase().replace(/[\s_\-]/g, "");
     }
   },
+  sendDescription = (language, variable, context) => {
+    const description = glossaries[language][variable] || glossaries.en[variable];
+
+    if (description) {
+      context.replyWithHTML(insertVariableName(description))
+        .then(() => {
+          if (description.image) {
+            context.replyWithPhoto(
+              {
+                url: description.image.url
+              },
+              {
+                caption: description.image.caption
+              }
+            )
+              .catch((error) => console.error(error));
+            context.telegram.sendChatAction(context.message.chat.id, "upload_photo")
+              .catch((err) => console.error(err));
+          }
+        })
+        .catch((error) => {
+          console.error(error);
+          context.reply(translations[language].errorSending)
+            .catch((err) => console.error(err));
+        });
+    } else {
+      context.reply(translations[language].unknownVariable)
+        .catch((error) => {
+          console.error(error);
+          context.reply(translations[language].errorSending)
+            .catch((err) => console.error(err));
+        });
+    }
+  },
   insertVariableName = (description) => description.text.replace(/\{\{correctWriting\}\}/g, `<a href="${description.link}">${description.correctWriting}</a>`);
 
 let lastId = Number.MIN_SAFE_INTEGER;
@@ -73,60 +107,46 @@ languages.forEach((language) => {
 });
 
 bot.command("start", (context) => {
-  const language = getLanguage(context.message.text, context.message.from);
+  const language = getLanguage(context.message.text.replace("/start ", ""), context.message.from);
   context.replyWithMarkdown(translations[language].start)
     .catch((error) => {
       console.error(error);
       context.reply("Oops, there was some error. Try again later")
-        .catch((err) => console.log(err));
+        .catch((err) => console.error(err));
     });
 });
 
 bot.command("help", (context) => {
-  const language = getLanguage(context.message.text, context.message.from);
+  const language = getLanguage(context.message.text.replace("/help ", ""), context.message.from);
   context.replyWithMarkdown(translations[language].help)
     .catch((error) => {
       console.error(error);
       context.reply("Oops, there was some error. Try again later")
-        .catch((err) => console.log(err));
+        .catch((err) => console.error(err));
     });
 });
 
-bot.on("text", (context) => {
-  const language = getLanguage(context.message.text, context.message.from),
-    variable = getQuery(context.message.text),
-    description = glossaries[language][variable] || glossaries.en[variable];
+bot.command("variable", (context) => {
+  const language = getLanguage(context.message.text.replace("/variable ", ""), context.message.from),
+    variable = getQuery(context.message.text.replace("/variable ", ""));
 
-  if (description) {
-    context.replyWithHTML(insertVariableName(description))
-      .then(() => {
-        if (description.image) {
-          context.replyWithPhoto(
-            {
-              url: description.image.url
-            },
-            {
-              caption: description.image.caption
-            }
-          )
-            .catch((error) => console.error(error));
-          context.telegram.sendChatAction(context.message.chat.id, "upload_photo")
-            .catch((err) => console.log(err));
-        }
-      })
-      .catch((error) => {
-        console.error(error);
-        context.reply(translations[language].errorSending)
-          .catch((err) => console.log(err));
-      });
-  } else {
-    context.reply(translations[language].unknownVariable)
-      .catch((error) => {
-        console.error(error);
-        context.reply(translations[language].errorSending)
-          .catch((err) => console.log(err));
-      });
-  }
+  sendDescription(language, variable, context);
+});
+
+bot.command("variable@atthemeglossarybot", (context) => {
+  const language = getLanguage(context.message.text.replace("/variable@atthemeglossarybot ", ""), context.message.from),
+    variable = getQuery(context.message.text.replace("/variable@atthemeglossarybot ", ""));
+
+  sendDescription(language, variable, context);
+});
+
+bot.on("text", (context) => {
+  if (context.message.chat.type != "private") return;
+
+  const language = getLanguage(context.message.text, context.message.from),
+    variable = getQuery(context.message.text);
+
+  sendDescription(language, variable, context);
 });
 
 bot.on("inline_query", ({ inlineQuery, answerInlineQuery }) => {
