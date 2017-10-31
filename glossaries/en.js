@@ -97,7 +97,7 @@ module.exports = {
       caption: "The red area shows “progressCircle”"
     },
     link: "http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Progress-indicators"
-  }
+  },
   chatsmessage: {
     correctWriting: "chats_message",
     text: "{{correctWriting}} sets the color of messages below the chat titles.",
@@ -106,7 +106,7 @@ module.exports = {
       caption: "The blue underline shows “chats_message”"
     },
     link: "http://telegra.ph/Android-Theming-Variables-Glossary-Chats-List-09-29#General-variables"
-  }
+  },
   checkboxsquareunchecked: {
     correctWriting: "checkboxSquareUnchecked",
     text: "{{correctWriting}} sets the border of a checkbox when it's unchecked.",
