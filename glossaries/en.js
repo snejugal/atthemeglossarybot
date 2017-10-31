@@ -107,4 +107,13 @@ module.exports = {
     },
     link: "http://telegra.ph/Android-Theming-Variables-Glossary-Chats-List-09-29#General-variables"
   }
+  checkboxsquareunchecked: {
+    correctWriting: "checkboxSquareUnchecked",
+    text: "{{correctWriting}} sets the border of a checkbox when it's unchecked.",
+    image: {
+      url: "http://telegra.ph/file/b06050d06c408d8d2d343.png",
+      caption: "The red area shows “checkboxSquareUnchecked”"
+    },
+    link: "http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Checkbox"
+  }
 }
