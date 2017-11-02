@@ -124,5 +124,14 @@ module.exports = {
       caption: "The red area shows “divider”"
     },
     link: "http://telegra.ph/Android-Theming-Variables-Glossary-Lists-09-26"
+  },
+  listselectorsdk21: {
+    correctWriting: "listSelectorSDK21",
+    text: "{{correctWriting}} sets the color of the ripple effect when you tap a list item. There was also listSelector variable that worked only on Android 4.4 and below and has been removed.",
+    image: {
+      url: "http://telegra.ph/file/8f84bd8b814d72bd52e3a.png",
+      caption: "The blue area shows “listSelectorSDK21”"
+    },
+    link: "http://telegra.ph/Android-Theming-Variables-Glossary-Lists-09-26"
   }
 }
