@@ -142,5 +142,10 @@ module.exports = {
       caption: "The green area shows “emptyListPlaceholder”"
     },
     link: "http://telegra.ph/Android-Theming-Variables-Glossary-Lists-09-26"
+  },
+  avatartext: {
+    correctWriting: "avatar_text",
+    text: "{{correctWriting}} sets the color on the avatars background.",
+    link: "http://telegra.ph/Android-Theme-Variables-Guide-05-08#Avatars"
   }
 }
