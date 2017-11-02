@@ -115,5 +115,14 @@ module.exports = {
       caption: "The red area shows “checkboxSquareUnchecked”"
     },
     link: "http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Checkbox"
+  },
+  divider: {
+    correctWriting: "divider",
+    text: "{{correctWriting}} sets the color of gray lines that divide items of lists.",
+    image: {
+      url: "http://telegra.ph/file/8f84bd8b814d72bd52e3a.png",
+      caption: "The red area shows “divider”"
+    },
+    link: "http://telegra.ph/Android-Theming-Variables-Glossary-Lists-09-26"
   }
 }
