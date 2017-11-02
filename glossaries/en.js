@@ -147,5 +147,50 @@ module.exports = {
     correctWriting: "avatar_text",
     text: "{{correctWriting}} sets the color on the avatars background.",
     link: "http://telegra.ph/Android-Theme-Variables-Guide-05-08#Avatars"
+  },
+  chatsdate: {
+    correctWriting: "chats_date",
+    text: "{{correctWriting}} sets the time or date color in the top right corner of a chat.",
+    image: {
+      url: "http://telegra.ph/file/760da93bdf524a8dd6203.png",
+      caption: "The orange underline shows “chats_date”"
+    },
+    link: "http://telegra.ph/Android-Theming-Variables-Glossary-Chats-List-09-29"
+  },
+  chatsnamemessage: {
+    correctWriting: "chats_nameMessage",
+    text: "{{correctWriting}} sets the sender name color in groups.",
+    image: {
+      url: "http://telegra.ph/file/760da93bdf524a8dd6203.png",
+      caption: "The red underline shows “chats_nameMessage”"
+    },
+    link: "http://telegra.ph/Android-Theming-Variables-Glossary-Chats-List-09-29"
+  },
+  chatsactionmessage: {
+    correctWriting: "chats_actionMessage",
+    text: "{{correctWriting}} sets the color of texts like “You joined the channel” and also attached message type (like photo, GIF, video etc) if the sender name is omitted.",
+    image: {
+      url: "http://telegra.ph/file/760da93bdf524a8dd6203.png",
+      caption: "The light green underline shows “chats_actionMessage”"
+    },
+    link: "http://telegra.ph/Android-Theming-Variables-Glossary-Chats-List-09-29"
+  },
+  chatsattachmessage: {
+    correctWriting: "chats_attachMessage",
+    text: "{{correctWriting}} sets the attached message type like photo, video, audio etc if the sender name is not omitted.",
+    image: {
+      url: "http://telegra.ph/file/760da93bdf524a8dd6203.png",
+      caption: "The dark green line shows “chats_attachMessage”"
+    },
+    link: "http://telegra.ph/Android-Theming-Variables-Glossary-Chats-List-09-29"
+  },
+  chatsdraft: {
+    correctWriting: "chats_draft",
+    text: "{{correctWriting}} sets the “Draft” text color that appears when you type some text and then close the chat without sending it.",
+    image {
+      url: "http://telegra.ph/file/760da93bdf524a8dd6203.png",
+      caption: "The purple line shows ”chats_draft”"
+    },
+    link: "http://telegra.ph/Android-Theming-Variables-Glossary-Chats-List-09-29"
   }
 }
