@@ -133,5 +133,14 @@ module.exports = {
       caption: "The blue area shows “listSelectorSDK21”"
     },
     link: "http://telegra.ph/Android-Theming-Variables-Glossary-Lists-09-26"
+  },
+  emptylistplaceholder: {
+    correctWriting: "emptyListPlaceholder",
+    text: "{{correctWriting}} sets the color of placeholder text — the text that you see if there's no content — when you open an empty list. You can see it in Chat screen → Attach — Music if you don't have any music. If you do, you can move them from the Music folder for a moment and move them back after you're done.",
+    image: {
+      url: "http://telegra.ph/file/8f84bd8b814d72bd52e3a.png",
+      caption: "The green area shows “emptyListPlaceholder”"
+    },
+    link: "http://telegra.ph/Android-Theming-Variables-Glossary-Lists-09-26"
   }
 }
