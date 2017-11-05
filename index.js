@@ -111,8 +111,15 @@ const removeCorrentWriting = (string) => string.replace(
 let lastId = Number.MIN_SAFE_INTEGER;
 
 languages.forEach((language) => {
-  glossaries[language] = require(`./glossaries/${language}.js`);
+  const glossary = require(`./glossaries/${language}.js`);
+  glossaries[language] = {};
+  for (let variable in glossary) {
+    glossary[variable].correctWriting = variable;
+    const iterableVariable = variable.replace(/_/g, ``).toLowerCase();
+    glossaries[language][iterableVariable] = glossary[variable];
+  }
   glossaries[language][variables] = Object.keys(glossaries[language]);
+
   sections[language] = require(`./sections/${language}.js`);
   translations[language] = require(`./translations/${language}.js`);
 });
@@ -221,6 +228,7 @@ bot.on(`inline_query`, ({ inlineQuery, answerInlineQuery }) => {
         .forEach((variable) => {
           const description = glossaries[language][variable];
           const { correctWriting: title, url } = description;
+          const text = removeCorrentWriting(description.text.replace(/\n/g, ` `));
           let thumb_url;
           if (`image` in description) {
             thumb_url = description.image.url;
@@ -235,7 +243,7 @@ bot.on(`inline_query`, ({ inlineQuery, answerInlineQuery }) => {
             url,
             hide_url: true,
             thumb_url,
-            description: removeCorrentWriting(description.text),
+            description: text,
             input_message_content: {
               message_text: insertVariableName(description),
               parse_mode: `HTML`

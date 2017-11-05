@@ -1,6 +1,5 @@
 module.exports = {
-  windowbackgroundwhiteblacktext: {
-    correctWriting: `windowBackgroundWhiteBlackText`,
+  windowBackgroundWhiteBlackText: {
     text: `{{correctWriting}} устанавливает цвет практически всего текста в приложении. <b>Будьте внимательны:</b> цвет заголовках в результатах инлайн-бота также устанавливается этой переменной, хотя фон результатов устанавливается chat_messagePanelBackground, а не windowBackgroundWhite. Подумайте о том, чтобы задавать chat_messagePanelBackground и windowBackgroundWhite один и тот же цвет, или проверяйте читабельность результатов бота.`,
     image: {
       url: `http://telegra.ph/file/58a52e0628673beb412c9.png`,
@@ -8,8 +7,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-Androide-Tekst-10-03`
   },
-  windowbackgroundgrayshadow: {
-    correctWriting: `windowBackgroundGrayShadow`,
+  windowBackgroundGrayShadow: {
     text: `{{correctWriting}} задает цвет тени секций как в Настройках.`,
     image: {
       url: `http://telegra.ph/file/b07d55cd8c66ff2be7748.png`,
@@ -17,8 +15,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-09-29`
   },
-  windowbackgroundwhiteicon: {
-    correctWriting: `windowBackgroundWhiteIcon`,
+  windowBackgroundWhiteIcon: {
     text: `{{correctWriting}} задает цвет иконок на экране, как New message.`,
     image: {
       url: `http://telegra.ph/file/b07d55cd8c66ff2be7748.png`,
@@ -26,8 +23,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-09-29`
   },
-  graysection: {
-    correctWriting: `graySection`,
+  graySection: {
     text: `{{correctWriting}} задает цвет фона заголовка, как «Contacts» на экране нового сообщения. Заголовок на этой шапке задается windowBackgroumdWhiteGrayText2.`,
     image: {
       url: `http://telegra.ph/file/b07d55cd8c66ff2be7748.png`,
@@ -35,8 +31,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-09-29`
   },
-  windowbackgroundwhitehinttext: {
-    correctWriting: `windowBackgroundWhiteHintText`,
+  windowBackgroundWhiteHintText: {
     text: `{{correctWriting}} задается цвет вводимого заполнителя — это текст, который Вы видете перед тем как что-либо ввели`,
     image: {
       url: `http://telegra.ph/file/5ed1d4e705520a96e7ce4.png`,
@@ -44,8 +39,7 @@ module.exports = {
     },
     url: `http%3A%2F%2Ftelegra.ph%2FSlovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29%23%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BF%D0%BE%D0%BB%D1%8F`
   },
-  windowbackgroundwhiteinputfield: {
-    correctWriting: `windowbackgroundwhiteinputfield`,
+  windowBackgroundWhiteInputField: {
     text: `{{correctWriting}} задает цвет нижней границы когда ввод неактивен.`,
     image: {
       url: `http://telegra.ph/file/5ed1d4e705520a96e7ce4.png`,
@@ -53,8 +47,7 @@ module.exports = {
     },
     url: `http%3A%2F%2Ftelegra.ph%2FSlovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29%23%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BF%D0%BE%D0%BB%D1%8F`
   },
-  windowbackgroundwhiteinputfieldactivated: {
-    correctWriting: `windowBackgroundWhiteInputFieldActivated`,
+  windowBackgroundWhiteInputFieldActivated: {
     text: `{{correctWriting}} задает цвет нижней границы когда ввод активен.`,
     image: {
       url: `http://telegra.ph/file/5ed1d4e705520a96e7ce4.png`,
@@ -62,8 +55,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29%23%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BF%D0%BE%D0%BB%D1%8F`
   },
-  switchtrack: {
-    correctWriting: `switchTrack`,
+  switchTrack: {
     text: `{{correctWriting}} задает цвет фона переключателя когда переключатель выключен.`,
     image: {
       url: `http://telegra.ph/file/a35d290013ac1567734a2.png`,
@@ -71,8 +63,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%9F%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D1%82%D0%B5%D0%BB%D1%8C`
   },
-  switchthumb: {
-    correctWriting: `switchThumb`,
+  switchThumb: {
     text: `{{correctWriting}} задает цвет кнопки переключателя — кружочка на конце переключателя — когда он выключен`,
     image: {
       url: `http://telegra.ph/file/a35d290013ac1567734a2.png`,
@@ -80,8 +71,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%9F%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D1%82%D0%B5%D0%BB%D1%8C`
   },
-  switchtrackchecked: {
-    correctWriting: `switchTrackChecked`,
+  switchTrackChecked: {
     text: `{{correctWriting}} задает цвет фона переключателя, когда он включен.`,
     image: {
       url: `http://telegra.ph/file/a35d290013ac1567734a2.png`,
@@ -89,8 +79,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%9F%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D1%82%D0%B5%D0%BB%D1%8C`
   },
-  switchthumbchecked: {
-    correctWriting: `switchThumbChecked`,
+  switchThumbChecked: {
     text: `{{correctWriting}} задает цвет кнопки переключателя, когда он включен.`,
     image: {
       url: `http://telegra.ph/file/a35d290013ac1567734a2.png`,
@@ -98,8 +87,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%9F%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D1%82%D0%B5%D0%BB%D1%8C`
   },
-  checkboxsquareunchecked: {
-    correctWriting: `checkboxSquareUnchecked`,
+  checkboxSquareUnchecked: {
     text: `{{correctWriting}} задает обводку чекбокса, когда он без галки.`,
     image: {
       url: `http://telegra.ph/file/6abb940db3ab21e3bef63.png`,
@@ -107,8 +95,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%A7%D0%B5%D0%BA%D0%B1%D0%BE%D0%BA%D1%81`
   },
-  checkboxsquaredisabled: {
-    correctWriting: `checkboxSquareDisabled`,
+  checkboxSquareDisabled: {
     text: `{{correctWriting}} задает фон чекбокса, когда он без галки. Как в Настройках группы, которая не переделана в супергруппу.`,
     image: {
       url: `http://telegra.ph/file/6abb940db3ab21e3bef63.png`,
@@ -116,8 +103,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%A7%D0%B5%D0%BA%D0%B1%D0%BE%D0%BA%D1%81`
   },
-  checkboxsquarebackground: {
-    correctWriting: `checkboxSquareBackground`,
+  checkboxSquareBackground: {
     text: `{{correctWriting}} задает фон чекбокса с галкой.`,
     image: {
       url: `http://telegra.ph/file/6abb940db3ab21e3bef63.png`,
@@ -125,8 +111,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%A7%D0%B5%D0%BA%D0%B1%D0%BE%D0%BA%D1%81`
   },
-  checkboxsquarecheck: {
-    correctWriting: `checkboxSquareCheck`,
+  checkboxSquareCheck: {
     text: `{{correctWriting}} задает цвет галки в чекбоксе`,
     image: {
       url: `http://telegra.ph/file/6abb940db3ab21e3bef63.png`,
@@ -134,8 +119,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%A7%D0%B5%D0%BA%D0%B1%D0%BE%D0%BA%D1%81`
   },
-  windowbackgroundgrayline: {
-    correctWriting: `windowBackgroundGrayLine`,
+  windowBackgroundGrayLine: {
     text: `{{correctWriting}} задает цвет нижней обводки раскрывающегося списка.`,
     image: {
       url: `http://telegra.ph/file/b0dd8a079924c0833d5b3.png`,
@@ -143,8 +127,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#Selection`
   },
-  contextprogressinner1: {
-    correctWriting: `contextProgressInner1`,
+  contextProgressInner1: {
     text: `{{correctWriting}} и contextProgressOuter1 задают цвет индикатора прогресса, когда измененное сообщение сохраняется.`,
     image: {
       url: `http://telegra.ph/file/46eb89f5e49a92bd3521c.png`,
@@ -152,8 +135,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%98%D0%BD%D0%B4%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B0`
   },
-  contextprogressouter1: {
-    correctWriting: `contextProgressOuter1`,
+  contextProgressOuter1: {
     text: `{{correctWriting}} и contextProgressInner1 задают цвет индикатора прогресса, когда измененное сообщение сохраняется.`,
     image: {
       url: `http://telegra.ph/file/46eb89f5e49a92bd3521c.png`,
@@ -161,8 +143,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%98%D0%BD%D0%B4%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B0`
   },
-  contextprogressinner2: {
-    correctWriting: `contextProgressInner2`,
+  contextProgressInner2: {
     text: `{{correctWriting}} и contextProgressOuter2 задают цвет индикатора прогресса, когда измененное сообщение сохраняется.`,
     image: {
       url: `http://telegra.ph/file/46eb89f5e49a92bd3521c.png`,
@@ -170,8 +151,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%98%D0%BD%D0%B4%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B0`
   },
-  contextprogressouter2: {
-    correctWriting: `contextProgressOuter2`,
+  contextProgressOuter2: {
     text: `{{correctWriting}} и contextProgressInner2 задают цвет индикатора прогресса на панели действий при создании группы или загрузке игры.`,
     image: {
       url: `http://telegra.ph/file/46eb89f5e49a92bd3521c.png`,
@@ -179,8 +159,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%98%D0%BD%D0%B4%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B0`
   },
-  contextprogressinner3: {
-    correctWriting: `contextProgressInner3`,
+  contextProgressInner3: {
     text: `{{correctWriting}} и contextProgressOuter3 задают цвет индикатора прогресса на верхней панели при открытии ссылки с помощью Instant View. Эти переменные могут быть изменены только с помощью <a href="https://snejugal.ru/attheme-editor">.attheme editor</a>.`,
     image: {
       url: `http://telegra.ph/file/46eb89f5e49a92bd3521c.png`,
@@ -188,8 +167,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%98%D0%BD%D0%B4%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B0`
   },
-  contextprogressouter3: {
-    correctWriting: `contextProgressOuter3`,
+  contextProgressOuter3: {
     text: `{{correctWriting}} и contextProgressInner3 задают цвет индикатора прогресса на верхней панели при открытии ссылки с помощью Instant View. Эти переменные могут быть изменены только с помощью <a href="https://snejugal.ru/attheme-editor">.attheme editor</a>.`,
     image: {
       url: `http://telegra.ph/file/46eb89f5e49a92bd3521c.png`,
@@ -197,8 +175,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%98%D0%BD%D0%B4%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B0`
   },
-  loginprogressinner: {
-    correctWriting: `login_progressInner`,
+  login_progressInner: {
     text: `{{correctWriting}} и login_progressOuter задают цвет индикатора прогресса времени таймера, когда Вы входите и ждете смс от Телеграмма (обычно телеграм присылает смс, когда Вы вошли на другом устройстве, но не имеете к нему доступ в данный момент).`,
     image: {
       url: `http://telegra.ph/file/46eb89f5e49a92bd3521c.png`,
@@ -206,8 +183,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%98%D0%BD%D0%B4%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B0`
   },
-  loginprogressouter: {
-    correctWriting: `login_progressOuter`,
+  login_progressOuter: {
     text: `{{correctWriting}} и login_progressInner задают цвет индикатора прогресса времени таймера, когда Вы входите и ждете смс от Телеграмма (обычно телеграм присылает смс, когда Вы вошли на другом устройстве, но не имеете к нему доступ в данный момент).`,
     image: {
       url: `http://telegra.ph/file/46eb89f5e49a92bd3521c.png`,
@@ -215,8 +191,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%98%D0%BD%D0%B4%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B0`
   },
-  progresscircle: {
-    correctWriting: `progressCircle`,
+  progressCircle: {
     text: `{{correctWriting}} задает цвет индикатора загрузки под списками`,
     image: {
       url: `http://telegra.ph/file/f421d1f9240efcbb2266a.png`,
@@ -224,23 +199,19 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%98%D0%BD%D0%B4%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B0`
   },
-  chatsactionbackground: {
-    correctWriting: `chats_actionBackground`,
+  chats_actionBackground: {
     text: `{{correctWriting}} задает фон кнопки «Новое Сообщение».`,
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D1%87%D0%B0%D1%82%D0%BE%D0%B2`
   },
-  chatsactionpresedbackground: {
-    correctWriting: `chats_actionPressedBackground`,
+  chats_actionPressedBackground: {
     text: `{{correctWriting}} задает цвет перекрытия кнопки «Новое сообщение», когда она нажата. Перекрытие означает, что если вы поставите значение альфа канала меньше 255, то кнопка не станет прозрачной, она будет сочетать два цвета. Это перекрывает только фон, иконка остается.`,
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D1%87%D0%B0%D1%82%D0%BE%D0%B2`
   },
-  chatsactionicon: {
-    correctWriting: `chats_actionIcon`,
+  chats_actionIcon: {
     text: `{{correctWriting}} определяет иконку на кнопке «Новое Сообщение».`,
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D1%87%D0%B0%D1%82%D0%BE%D0%B2`
   },
-  profileactionbackground: {
-    correctWriting: `profile_actionBackground`,
+  profile_actionBackground: {
     text: `{{correctWriting}} задает фон кнопки.`,
     image: {
       url: `http://telegra.ph/file/bc8d9f24f5c645a20ab7b.png`,
@@ -248,8 +219,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%AD%D0%BA%D1%80%D0%B0%D0%BD-%D0%BF%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8F`
   },
-  profileactionpressedbackground: {
-    correctWriting: `profile_actionPressedBackground`,
+  profile_actionPressedBackground: {
     text: `{{correctWriting}} задает цвет перекрытия кнопки, когда она нажата.`,
     image: {
       url: `http://telegra.ph/file/bc8d9f24f5c645a20ab7b.png`,
@@ -257,8 +227,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%AD%D0%BA%D1%80%D0%B0%D0%BD-%D0%BF%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8F`
   },
-  profileactionicon: {
-    correctWriting: `profile_actionIcon`,
+  profile_actionIcon: {
     text: `{{correctWriting}} устанавливает цвет иконки на кнопке панели действий. В группах, где вы являетесь администратором, кнопка означает «Поменять аватарку группы», тогда как при просмотре информации человека кнопка означает «Написать человеку», или «Переместиться на своё местоположение» на экране прикрепления локации.`,
     image: {
       url: `http://telegra.ph/file/bc8d9f24f5c645a20ab7b.png`,
@@ -266,8 +235,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-Upravlenie-09-29#%D0%AD%D0%BA%D1%80%D0%B0%D0%BD-%D0%BF%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8F`
   },
-  dialoglineprogressbackground: {
-    correctWriting: `dialogLineProgressBackground`,
+  dialogLineProgressBackground: {
     text: `{{correctWriting}} задает фоновый цвет линии прогресса, которую Вы можете видеть когда сохраняете в Загрузки любой файл (три точки рядом с файлом на экране чата → Сохранить в Загрузки).`,
     image: {
       url: `http://telegra.ph/file/13c08c2635fb774edfa81.png`,
@@ -275,8 +243,7 @@ module.exports = {
     },
     url: `http://telegra.ph/Slovar-peremennyh-v-sozdanii-tem-na-androide-09-29#%D0%98%D0%BD%D0%B4%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8`
   },
-  dialoglineprogress: {
-    correctWriting: `dialogLineProgress`,
+  dialogLineProgress: {
     text: `{{correctWriting}} задает цвет линии, которая показывает, какой процент уже загружен.`,
     image: {
       url: `http://telegra.ph/file/13c08c2635fb774edfa81.png`,
