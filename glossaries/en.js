@@ -111,6 +111,174 @@ module.exports = {
     },
     url: `http://telegra.ph/Android-Theming-Variables-Glossary-Text-08-11#Gray-text`
   },
+  windowBackgroundWhiteRedText: {
+    text: `{{correctWriting}} sets the color of red buttons on dialogs like the “Clear Cache” button in Settings → Data and Storage → Storage Usage → Clear Cache.\nYou can’t change this variable with the in -app editor for unknown reasons, so you have to use <a href="https://snejugal.ru/attheme-editor">.attheme editor</a> to change this variable.`,
+    image: {
+      url: `http://telegra.ph/file/4a7037b726915fb946ce5.png`,
+      caption: `The red area shows “windowBackgroundWhiteRedText”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Text-08-11#Red-text`
+  },
+  windowBackgroundWhiteRedText2: {
+    text: `{{correctWriting}} sets the color of red buttons in Settings like the “Terminate All Other Sessions” button in Settings → Privacy and Security → Active Sessions.`,
+    image: {
+      url: `http://telegra.ph/file/4a7037b726915fb946ce5.png`,
+      caption: `The dark blue area shows “windowBackgroundWhiteRedText2”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Text-08-11#Red-text`
+  },
+  windowBackgroundWhiteRedText3: {
+    text: `{{correctWriting}} sets the color of the “Abort two-step verification setup” button in Settings → Privacy and Security → Two-step Verification while settings up a two-step password.`,
+    image: {
+      url: `http://telegra.ph/file/4a7037b726915fb946ce5.png`,
+      caption: `The green area shows “windowBackgroundWhiteRedText3”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Text-08-11#Red-text`
+  },
+  windowBackgroundWhiteRedText4: {
+    text: `{{correctWriting}} sets the color of warning text below a text field like in Settings → Username when you try to take a username less than 5 symbols or already taken.`,
+    image: {
+      url: `http://telegra.ph/file/4a7037b726915fb946ce5.png`,
+      caption: `The purple area shows “windowBackgroundWhiteRedText4”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Text-08-11#Red-text`
+  },
+  windowBackgroundWhiteRedText5: {
+    text: `{{correctWriting}} sets the color of warning buttons like “Leave Channel” in the channel info screen.`,
+    image: {
+      url: `http://telegra.ph/file/4a7037b726915fb946ce5.png`,
+      caption: `The light blue area shows “windowBackgroundWhiteRedText5”, and the yellow area shows “windowBackgroundWhiteRedText6”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Text-08-11#Red-text`
+  },
+  windowBackgroundWhiteRedText6: {
+    text: `{{correctWriting}} sets the color of “Reset my account” button when you try to sign in your account that has a two-step verification password but you don’t remember it, try to restore it with your email but you can’t access it.\nThis variable can’t be changed with the in-app editor (because it closes after you sign out), so you have to use <a href="https://snejugal.ru/attheme-editor">.attheme editor</a> to change this variable.`,
+    image: {
+      url: `http://telegra.ph/file/4a7037b726915fb946ce5.png`,
+      caption: `The yellow area shows “windowBackgroundWhiteRedText6”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Text-08-11#Red-text`
+  },
+  windowBackgroundWhiteGreenText: {
+    text: `{{correctWriting}} sets the color of success text below text fields like in Settings → Username when you take a username no one has and longer than 5 symbols.`,
+    image: {
+      url: `http://telegra.ph/file/d7259d4042373280087b0.png`,
+      caption: `The red area shows “windowBackgroundWhuteGreenText”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Text-08-11#Green-text`
+  },
+  windowBackgroundWhiteGreenText2: {
+    text: `{{correctWriting}} sets the color of green buttons like “Start Secret Chat” in the chat with a person info screen.`,
+    image: {
+      url: `http://telegra.ph/file/d7259d4042373280087b0.png`,
+      caption: `The blue area shows “windowBackgroundWhiteGreenText2”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Text-08-11#Green-text`
+  },
+  windowBackgroundWhiteBlueHeader: {
+    text: `{{correctWriting}} sets the color of section header in Settings.`,
+    image: {
+      url: `http://telegra.ph/file/9695308c6022693ef0383.png`,
+      caption: `The red area shows “windowBackgroundWhiteBlueHeader`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Text-08-11#Blue-text`
+  },
+  windowBackgroundWhiteBlueText: {
+    text: `{{correctWriting}} sets the color of the Online status text in Contacts.`,
+    image: {
+      url: `http://telegra.ph/file/9695308c6022693ef0383.png`,
+      caption: `The purple area shows “windowBackgroundWhiteBlueText”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Text-08-11#Blue-text`
+  },
+  windowBackgroundWhiteBlueText3: {
+    text: `{{correctWriting}} sets the color of the Online status text in search results.`,
+    image: {
+      url: `http://telegra.ph/file/9695308c6022693ef0383.png`,
+      caption: `The dark blue area shows “windowBackgroundWhiteBlueText3”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Text-08-11#Blue-text`
+  },
+  windowBackgroundWhiteBlueText4: {
+    text: `{{correctWriting}} sets the color of the “Change Number” button in Settings → Phone and also sets the match highlights in search results.`,
+    image: {
+      url: `http://telegra.ph/file/9695308c6022693ef0383.png`,
+      caption: `The light blue areas show “windowBackgroundWhiteBlueText4”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Text-08-11#Blue-text`
+  },
+  windowBackgroundWhiteBlueText5: {
+    text: `{{correctWriting}} sets the color of “Create Channel” button in “What is a Channel?” screen that appears when you try to create a new channel (unless you already have one). If the screen doesn’t appear to you, then use <a href="https://snejugal.ru/attheme-editor">.attheme editor</a> to change this variable.`,
+    image: {
+      url: `http://telegra.ph/file/9695308c6022693ef0383.png`,
+      caption: `The green area shows “windowBackgroundWhiteBlueText5”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Text-08-11#Blue-text`
+  },
+  windowBackgroundWhiteBlueText6: {
+    text: `{{correctWriting}} sets the color of the pay button after you entered all payment data when you’re buying something. You can make a fake pay with @ShopBot to see the button or use <a href="https://snejugal.ru/attheme-editor">.attheme editor</a> to add change the variable.`,
+    image: {
+      url: `http://telegra.ph/file/9695308c6022693ef0383.png`,
+      caption: `The light orange area is “windowBackgroundWhiteBlueText6”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Text-08-11#Blue-text`
+  },
+  windowBackgroundWhiteBlueText7: {
+    text: `{{correctWriting}} sets the “Send your current location” button color in location attachment screen.`,
+    image: {
+      url: `http://telegra.ph/file/9695308c6022693ef0383.png`,
+      caption: `The teal area shows “windowBackgroundWhiteBlueText7”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Text-08-11#Blue-text`
+  },
+  windowBackgroundWhiteValueText: {
+    text: `{{correctWriting}} sets the option value color in Settings.`,
+    image: {
+      url: `http://telegra.ph/file/9695308c6022693ef0383.png`,
+      caption: `The light green one shows “windowBackgroundWhiteValueText”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Text-08-11#Blue-text`
+  },
+  windowBackgroundWhiteLinkText: {
+    text: `{{correctWriting}} sets the color of links, like #hashtags, @username's or just links in the chat info screen.`,
+    image: {
+      url: `http://telegra.ph/file/9695308c6022693ef0383.png`,
+      caption: `The dark orange area shows “windowBackgroundWhiteLinkText”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Text-08-11#Blue-text`
+  },
+  windowBackgroundWhiteLinkSelection: {
+    text: `{{correctWriting}} sets the overlay color that appears when you tap a link.`,
+    image: {
+      url: `http://telegra.ph/file/b0ab322c5c204203db8f6.png`,
+      caption: `The red area shows “windowBackgroundWhiteLinkSelection”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Text-08-11#Blue-text`
+  },
+  windowBackgroundWhiteHintText: {
+    text: `{{correctWriting}} sets the color of an input's placeholder — it's the text that you see before you enter any text.`,
+    image: {
+      url: `http://telegra.ph/file/042dc4e3fb8f97894b024.png`,
+      caption: `The red area shows “windowBackgroundWhiteHintText”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Text-flelds`
+  },
+  windowBackgroundWhiteInputField: {
+    text: `{{correctWriting}} sets the bottom border color when the input is inactive.`,
+    image: {
+      url: `http://telegra.ph/file/042dc4e3fb8f97894b024.png`,
+      caption: `The blue area shows “windowBackgroundWhiteInputField”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Text-flelds`
+  },
+  windowBackgroundWhiteInputFieldActivated: {
+    text: `{{correctWriting}} sets the bottom border color when the input is active.`,
+    image: {
+      url: `http://telegra.ph/file/042dc4e3fb8f97894b024.png`,
+      caption: `The green area shows “windowBackgroundWhiteInputFieldActivated”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Text-flelds`
+  },
   switchTrack: {
     text: `{{correctWriting}} sets the color of a switch track — its background — when the switch is turned off.`,
     image: {
@@ -167,6 +335,102 @@ module.exports = {
     },
     url: `http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Checkbox`
   },
+  checkboxSquareDisabled: {
+    text: `{{correctWriting}} sets the background of a checkbox when it's disabled. Like in Settings of a group that's not converted to a supergroup.`,
+    image: {
+      url: `http://telegra.ph/file/b06050d06c408d8d2d343.png`,
+      caption: `The orange area shows “checkboxSquareDisabled”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Checkbox`
+  },
+  checkboxSquareBackground: {
+    text: `{{correctWriting}} sets the background of a checkbox when it's checked.`,
+    image: {
+      url: `http://telegra.ph/file/b06050d06c408d8d2d343.png`,
+      caption: `The blue area shows “checkboxSquareBackground”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Checkbox`
+  },
+  checkboxSquareCheck: {
+    text: `{{correctWriting}} sets the color of the check mark when the checkbox is checked.`,
+    image: {
+      url: `http://telegra.ph/file/b06050d06c408d8d2d343.png`,
+      caption: `The green area shows “checkboxSquareCheck”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Checkbox`
+  },
+  windowBackgroundGrayLine: {
+    text: `{{correctWriting}} sets the border color of openable lists control.`,
+    image: {
+      url: `http://telegra.ph/file/a07de2cdb393076771c17.png`,
+      caption: `The red area shows “windowBackgroundGrayLine”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Openable-list-control`
+  },
+  contextProgressInner1: {
+    text: `{{correctWriting}} and <b>contextProgressOuter1</b> set the progress indicator when an edited message is being saved.`,
+    image: {
+      url: `http://telegra.ph/file/6dfa78da2030606639c35.png`,
+      caption: `The red area shows “contextProgress*1”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Progress-indicators`
+  },
+  contextProgressOuter1: {
+    text: `{{correctWriting}} and <b>contextProgressInner1</b> set the progress indicator when an edited message is being saved.`,
+    image: {
+      url: `http://telegra.ph/file/6dfa78da2030606639c35.png`,
+      caption: `The red area shows “contextProgress*1”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Progress-indicators`
+  },
+  contextProgressInner2: {
+    text: `{{correctWriting}} and <b>contextProgressOuter2</b> set the progress indicator on the action bar when a group is being created or a game is being loaded.`,
+    image: {
+      url: `http://telegra.ph/file/6dfa78da2030606639c35.png`,
+      caption: `The green area shows “contextProgress*2”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Progress-indicators`
+  },
+  contextProgressOuter2: {
+    text: `{{correctWriting}} and <b>contextProgressInner2</b> set the progress indicator on the action bar when a group is being created or a game is being loaded.`,
+    image: {
+      url: `http://telegra.ph/file/6dfa78da2030606639c35.png`,
+      caption: `The green area shows “contextProgress*2”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Progress-indicators`
+  },
+  contextProgressInner3: {
+    text: `{{correctWriting}} and <b>contextProgressOuter3</b> set the progress indicator on the top bar when opening a link using Instant View. These variables can be changed only with <a href="https://snejugal.ru/attheme-editor">.attheme editor.</a>`,
+    image: {
+      url: `http://telegra.ph/file/6dfa78da2030606639c35.png`,
+      caption: `The purple area shows “contextProgress*3”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Progress-indicators`
+  },
+  contextProgressOuter3: {
+    text: `{{correctWriting}} and <b>contextProgressInner3</b> set the progress indicator on the top bar when opening a link using Instant View. These variables can be changed only with <a href="https://snejugal.ru/attheme-editor">.attheme editor.</a>`,
+    image: {
+      url: `http://telegra.ph/file/6dfa78da2030606639c35.png`,
+      caption: `The purple area shows “contextProgress*3”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Progress-indicators`
+  },
+  login_progressInner: {
+    text: `{{correctWriting}} and <b>login_progressOuter</b> set the timer counting progress indicator when you're signing in and waiting for a call from Telegram that it will process automatically (usually Telegram makes a call when you're signed in another device but you can't access it to get the sign in code).`,
+    image: {
+      url: `http://telegra.ph/file/6dfa78da2030606639c35.png`,
+      caption: `The orange area shows “login_progress*”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Progress-indicators`
+  },
+  login_progressOuter: {
+    text: `{{correctWriting}} and <b>login_progressInner</b> set the timer counting progress indicator when you're signing in and waiting for a call from Telegram that it will process automatically (usually Telegram makes a call when you're signed in another device but you can't access it to get the sign in code).`,
+    image: {
+      url: `http://telegra.ph/file/6dfa78da2030606639c35.png`,
+      caption: `The orange area shows “login_progress*”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Progress-indicators`
+  },
   player_actionBar: {
     text: `{{correctWriting}}, <i>player_actionBarItems</i>, <i>player_actionBarTitle</i>, <i>player_actionBarSubtitle</i>, <i>player_actionBarSelector</i> set the same things <i>actionBarDefault</i>, <i>actionBarDefaultIcon</i>, <i>actionBarDefaultTitle</i>, <i>actionBarDefaultSubtitle</i> and <i>actionBarDefaultSelector</i> respectively do.`,
     image: {
@@ -205,7 +469,7 @@ module.exports = {
       url: `http://telegra.ph/file/990707283fc6d4edb251d.png`,
       caption: `The blue circle shows “player_actionBarSelector”`
     },
-    url: `http://telegra.ph/Android-Theming-Variables-Glossary-In-app-Music-Player-10-01#Action-bar`,
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-In-app-Music-Player-10-01#Action-bar`
   },
   chats_message: {
     text: `{{correctWriting}} sets the color of messages below the chat titles.`,
@@ -214,14 +478,6 @@ module.exports = {
       caption: `The blue underline shows “chats_message”`
     },
     url: `http://telegra.ph/Android-Theming-Variables-Glossary-Chats-List-09-29#General-variables`
-  },
-  checkboxSquareUnchecked: {
-    text: `{{correctWriting}} sets the border of a checkbox when it's unchecked.`,
-    image: {
-      url: `http://telegra.ph/file/b06050d06c408d8d2d343.png`,
-      caption: `The red area shows “checkboxSquareUnchecked”`
-    },
-    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Checkbox`
   },
   divider: {
     text: `{{correctWriting}} sets the color of gray lines that divide items of lists.`,

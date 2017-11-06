@@ -213,7 +213,7 @@ bot.on(`inline_query`, ({ inlineQuery, answerInlineQuery }) => {
         options.is_personal = true;
       }
     } else {
-      const variablesList = glossaries[language][variables]
+      let variablesList = glossaries[language][variables]
         .filter((variable) => (
           variable.includes(query) && glossaries[language][variable].url
         ))
@@ -249,7 +249,13 @@ bot.on(`inline_query`, ({ inlineQuery, answerInlineQuery }) => {
               parse_mode: `HTML`
             },
           });
-        })
+        });
+
+      const originalQuery = inlineQuery.query.trim();
+      if (originalQuery[3] == ` ` &&
+          !languages.includes(originalQuery.slice(0, 2))) {
+        options.is_personal = true;
+      }
     }
     answerInlineQuery(results, options);
   } catch (error) {

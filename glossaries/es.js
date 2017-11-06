@@ -96,9 +96,7 @@ module.exports = {
     url: `http://telegra.ph/Variable-Textos-10-20`
   },
   windowBackgroundWhiteRedText: {
-    text: `{{correctWriting}} establece el color de los botones rojos en cuadros de diálogo como el botón "Borrar caché" en Configuración → Datos y almacenamiento → Uso de almacenamiento → Borrar caché. 
-    
-    No se puede cambiar esta variable con el editor de la aplicación por motivos desconocidos. Por ello, tendrás que hacer uso del editor`,
+    text: `{{correctWriting}} establece el color de los botones rojos en cuadros de diálogo como el botón "Borrar caché" en Configuración → Datos y almacenamiento → Uso de almacenamiento → Borrar caché.\n\nNo se puede cambiar esta variable con el editor de la aplicación por motivos desconocidos. Por ello, tendrás que hacer uso del editor`,
     image: {
       url: `http://telegra.ph/file/f0f35ba35c43e43487f90.jpg`,
       caption: `El área naranja muestra “windowBackgroundWhiteRedText”`
@@ -139,9 +137,7 @@ module.exports = {
     url: `http://telegra.ph/Variable-Textos-10-20`
   },
   windowBackgroundWhiteRedText6: {
-    text: `{{correctWriting}} establece el color del botón "Restablecer mi Cuenta" cuando intentas iniciar sesión en tu cuenta y dicha cuenta tiene una contraseña que no recuerdas, intentas restaurarla con tu correo electrónico pero no puedes acceder a ella, asi veras este mensaje. 
-    
-    Esta variable no se puede cambiar con el editor de la aplicación. Por ello, deberás usar el editor.`,
+    text: `{{correctWriting}} establece el color del botón "Restablecer mi Cuenta" cuando intentas iniciar sesión en tu cuenta y dicha cuenta tiene una contraseña que no recuerdas, intentas restaurarla con tu correo electrónico pero no puedes acceder a ella, asi veras este mensaje.\n\nEsta variable no se puede cambiar con el editor de la aplicación. Por ello, deberás usar el editor.`,
     image: {
       url: `http://telegra.ph/file/f0f35ba35c43e43487f90.jpg`,
       caption: `El área morada muestra “windowBackgroundWhiteRedText6”`
@@ -239,13 +235,6 @@ module.exports = {
     },
     url: `http://telegra.ph/Variable-Textos-10-20`
   },
-  windowBackgroundWhiteBlackText: {
-    text: `{{correctWriting}} establece el color de texto escrito en esa casilla.`,
-    image: {
-      url: `http://telegra.ph/file/4179ed35be5051c740a8c.png`,
-    },
-    url: `http://telegra.ph/Variable-Controles-10-21`
-  }, 
   windowBackgroundWhiteHintText: {
       text: `{{correctWriting}} establece el color del marcador de posición de una entrada: es el texto que ves antes de ingresar cualquier texto.`,
       image: {
@@ -341,7 +330,7 @@ module.exports = {
       caption: `El área rosa muestra “windowBackgroundGrayLine”`
     },
     url: `http://telegra.ph/Variable-Controles-10-21`
-},
+  },
   progressCircle: {
     correctwriting: `progressCircle`,
     text: `{{correctWriting}} establece el color del indicador de carga debajo de la pantalla de chats.`,
@@ -350,7 +339,7 @@ module.exports = {
       caption: `El área roja muestra “progressCircle”`
     },
     url: `http://telegra.ph/Variable-Controles-10-21`
-},
+  },
   graySection: {
     text: `{{correctWriting}} establece el color de fondo del encabezado como Contactos. El color del título de este encabezado deberia establecerse con windowBackgroumdWhiteGrayText2.`,
     image: {
