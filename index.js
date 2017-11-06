@@ -1,211 +1,261 @@
-"use strict";
+`use strict`;
 
-const Telegraf = require("telegraf"),
-  token = require("./token.js"),
-  fs = require("fs"),
+const Telegraf = require(`telegraf`);
+const { token, options } = require(`./config.js`);
+const fs = require(`fs`);
+const bot = new Telegraf(token, options);
 
-  bot = new Telegraf(token),
+const glossaries = {};
+const sections = {};
+const translations = {};
 
-  glossaries = {},
-  sections = {},
-  translations = {},
+const variables = Symbol.for(`variables`);
+const previewImageUrl = `http://telegra.ph/file/d2171f35b0577484cca93.png`;
+const languages = [`en`, `ru`, `it`, `es`];
 
-  variables = Symbol.for("variables"),
-  previewImageUrl = "http://telegra.ph/file/d2171f35b0577484cca93.png",
-  languages = ["en", "ru", "it", "es"],
+const newId = () => (lastId++).toString(36);
+const normalizeQuery = (x) => x.trim().toLowerCase().replace(/[\s_\-]/g, ``);
+const logError = (...error) => console.error(...error);
 
-  newId = () => (lastId++).toString(36),
-  getLanguage = (text, { languageCode = "" }) => {
-    const [requestedLanguage] = text.trim().toLowerCase().split(" ");
-    languageCode = languageCode.slice(0, 2);
+const getLanguage = (text, { languageCode = `` }) => {
+  const [requestedLanguage] = text.trim().toLowerCase().split(` `);
+  languageCode = languageCode.slice(0, 2);
 
-    if (~languages.indexOf(requestedLanguage)) {
-      return requestedLanguage;
-    } else if (~languages.indexOf(languageCode)) {
-      return languageCode;
+  if (languages.includes(requestedLanguage)) {
+    return requestedLanguage;
+  } else if (languages.includes(languageCode)) {
+    return languageCode;
+  }
+  return `en`;
+};
+
+const getQuery = (text) => {
+  const splitText = text.split(` `).slice(0, 2).map(normalizeQuery);
+
+  if (languages.includes(splitText[0])) {
+    return splitText.slice(1) || ``;
+  } else {
+    return normalizeQuery(text);
+  }
+};
+
+const sendDescription = (language, variable, context) => {
+  const description = glossaries[language][variable] || glossaries.en[variable];
+
+  if (description) {
+    const options = {};
+    if (context.chat.type != `private`) {
+      options.reply_to_message_id = context.message.message_id;
     }
-    return "en";
-  },
-  getQuery = (text) => {
-    const splitText = text.split(" ").slice(0, 2).map((x) => x.toLowerCase().replace(/[\s_\-]/g, ""));
-    if (~languages.indexOf(splitText[0])) {
-      return splitText.slice(1) || "";
-    } else {
-      return text.trim().toLowerCase().replace(/[\s_\-]/g, "");
-    }
-  },
-  sendDescription = (language, variable, context) => {
-    const description = glossaries[language][variable] || glossaries.en[variable];
 
-    if (description) {
-      context.replyWithHTML(
-        insertVariableName(description),
-        (() => {
-          if (context.chat.type != "private") {
-            return {
-              reply_to_message_id: context.message.message_id
-            };
-          }
-        })()
-      )
-        .then(() => {
-          if (description.image) {
-            context.replyWithPhoto(
-              {
-                url: description.image.url
-              },
-              {
-                caption: description.image.caption
-              }
-            )
-              .catch((error) => console.error(error));
-            context.telegram.sendChatAction(context.message.chat.id, "upload_photo")
-              .catch((error) => console.error(error));
-          }
-        })
-        .catch((error) => {
-          console.error(error);
-          context.reply(translations[language].errorSending)
-            .catch((error) => console.error(error));
-        });
-    } else {
-      context.reply(translations[language].unknownVariable)
-        .catch((error) => {
-          console.error(error);
-          context.reply(translations[language].errorSending)
-            .catch((error) => console.error(error));
-        });
+    context.replyWithHTML(insertVariableName(description), options)
+      .then(() => {
+        if (`image` in description) {
+          const url = {
+            url: description.image.url
+          };
+          const caption = {
+            caption: description.image.caption
+          };
+
+          context.replyWithPhoto(url, caption)
+            .catch(logError);
+          context.telegram.sendChatAction(context.chat.id, `upload_photo`)
+            .catch(logError);
+        }
+      })
+      .catch((error) => {
+        logError(error);
+
+        context.reply(translations[language].errorSending)
+          .catch(logError);
+      });
+  } else {
+    context.reply(translations[language].unknownVariable)
+      .catch((error) => {
+        logError(error);
+
+        context.reply(translations[language].errorSending)
+          .catch(logError);
+      });
+  }
+};
+
+const insertVariableName = ({ text, url, correctWriting }) => text.replace(
+  /\{\{correctWriting\}\}/g,
+  `<a href="${url}">${correctWriting}</a>`,
+);
+
+const removeEntities = (message) => {
+  if (!message.entities) {
+    return message.text;
+  }
+  const query = message.text.split(``);
+  let entitiesLength = 0;
+  message.entities.forEach((entity, i) => {
+    let offset = entity.offset + entitiesLength;
+    if (offset > 0) {
+      offset--;
     }
-  },
-  insertVariableName = ({ text, link, correctWriting }) => {
-    return text.replace(/\{\{correctWriting\}\}/g, `<a href="${link}">${correctWriting}</a>`);
-  };
+    entitiesLength += entity.length + 1;
+    query.splice(offset, entity.length + 1);
+  });
+  return query.join(``);
+};
+
+const removeCorrentWriting = (string) => string.replace(
+  /\{\{correctWriting\}\}[ \,]{0,}|<[\w\/]{0,}>/g,
+  ``,
+);
 
 let lastId = Number.MIN_SAFE_INTEGER;
 
 languages.forEach((language) => {
-  glossaries[language] = require(`./glossaries/${language}.js`);
+  const glossary = require(`./glossaries/${language}.js`);
+  glossaries[language] = {};
+  for (let variable in glossary) {
+    glossary[variable].correctWriting = variable;
+    const iterableVariable = variable.replace(/_/g, ``).toLowerCase();
+    glossaries[language][iterableVariable] = glossary[variable];
+  }
   glossaries[language][variables] = Object.keys(glossaries[language]);
+
   sections[language] = require(`./sections/${language}.js`);
   translations[language] = require(`./translations/${language}.js`);
 });
 
-bot.command("start", (context) => {
-  const language = getLanguage(
-    context.message.text.replace(/ +(?= )|\/start /g, "").trim(),
-    context.message.from
-  );
+bot.use((context, next) => {
+  if (context.updateType != `inline_query`) {
+    const sendChatAction = context.telegram.sendChatAction;
+    const chatId = context.chat.id;
+
+    context.sendChatAction = sendChatAction.bind(chatId);
+  }
+  next();
+});
+
+bot.command(`start`, (context) => {
+  const message = removeEntities(context.message);
+  const language = getLanguage(message, context.from);
 
   context.replyWithMarkdown(translations[language].start)
     .catch((error) => {
-      console.error(error);
-      context.reply("Oops, there was some error. Try again later")
-        .catch((error) => console.error(error));
+      logError(error);
+      context.reply(`Oops, there was some error. Try again later`)
+        .catch(logError);
     });
 });
 
-bot.command("help", (context) => {
-  if (context.message.chat.type != "private") {
-    context.reply("I can reply to this command only in private.");
+bot.command(`help`, (context) => {
+  if (context.message.chat.type != `private`) {
+    context.reply(`I will reply to this command only in private.`);
+    return;
   }
 
-  const language = getLanguage(
-    context.message.text.replace(/ +(?= )|\/help /g, "").trim(),
-    context.message.from
-  );
+  const message = removeEntities(context.message);
+  const language = getLanguage(message, context.from);
 
   context.replyWithMarkdown(translations[language].help)
     .catch((error) => {
-      console.error(error);
-      context.reply("Oops, there was some error. Try again later")
-        .catch((error) => console.error(error));
+      logError(error);
+      context.reply(`Oops, there was some error. Try again later`)
+        .catch(logError);
     });
 });
 
-bot.command("variable", (context) => {
-  const text = context.message.text.replace(/ +(?= )|\/variable /g, "").trim();
+bot.command(`variable`, (context) => {
+  const message = removeEntities(context.message);
+  const language = getLanguage(message, context.from);
+  const query = getQuery(message);
 
-  sendDescription(
-    getLanguage(text, context.message.from),
-    getQuery(text),
-    context
-  );
+  sendDescription(language, query, context);
 });
 
-bot.command("variable@atthemeglossarybot", (context) => {
-  const text = context.message.text.replace(/ +(?= )|\/variable@atthemeglossarybot /g, "").trim();
+bot.on(`text`, (context) => {
+  if (context.chat.type != `private`) return;
 
-  sendDescription(
-    getLanguage(text, context.message.from),
-    getQuery(text),
-    context
-  );
+  const message = removeEntities(context.message);
+  const language = getLanguage(message, context.from);
+  const query = getQuery(message);
+
+  sendDescription(language, query, context);
 });
 
-bot.on("text", (context) => {
-  if (context.message.chat.type != "private") return;
-  const text = context.message.text.replace(/ +(?= )/g, "").trim();
-
-  sendDescription(
-    getLanguage(text, context.message.from),
-    getQuery(text),
-    context
-  );
-});
-
-try {
-  bot.on("inline_query", ({ inlineQuery, answerInlineQuery }) => {
-    const language = getLanguage(inlineQuery.query, inlineQuery.from),
-      query = getQuery(inlineQuery.query);
-
-    if (query == "") {
-      return answerInlineQuery(
-        sections[language].map(({ title, link }) => ({
-          id: newId(),
-          type: "article",
-          title,
-          url: link,
-          input_message_content: {
-            message_text: `<a href="${link}">${title}</a>`,
-            parse_mode: "HTML"
-          },
-          hide_url: true,
-          thumb_url: previewImageUrl
-        })),
-        {
-          next_offset: "",
-          cache_time: 60
-        }
-      );
+bot.on(`inline_query`, ({ inlineQuery, answerInlineQuery }) => {
+  try {
+    const language = getLanguage(inlineQuery.query, inlineQuery.from);
+    const query = getQuery(inlineQuery.query);
+    const results = [];
+    const offset = inlineQuery.offset || 0;
+    const options = {
+      next_offset: ``,
+      is_personal: false,
+      cache_time: 300,
     };
 
-    const results = glossaries[language][variables]
-      .filter((variable) => ~variable.indexOf(query) && glossaries[language][variable].link)
-      .map((variable) => {
-        const description = glossaries[language][variable],
-          result = {
+    if (query == ``) {
+      sections[language].forEach(({ title, url, previewLink }) => {
+        results.push({
+          id: newId(),
+          type: `article`,
+          title,
+          url,
+          hide_url: true,
+          thumb_url: previewLink || previewImageUrl,
+          input_message_content: {
+            message_text: `<a href="${url}">${title}</a>`,
+            parse_mode: `HTML`,
+          },
+        })
+      });
+
+      if (inlineQuery.query.trim() == ``) {
+        options.is_personal = true;
+      }
+    } else {
+      const variablesList = glossaries[language][variables]
+        .filter((variable) => (
+          variable.includes(query) && glossaries[language][variable].url
+        ))
+        .slice(offset);
+
+      if (variablesList.length > 50) {
+        options.next_offset = offset + 50;
+        variablesList = variablesList.slice(0, 50);
+      }
+
+      variablesList
+        .forEach((variable) => {
+          const description = glossaries[language][variable];
+          const { correctWriting: title, url } = description;
+          const text = removeCorrentWriting(description.text.replace(/\n/g, ` `));
+          let thumb_url;
+          if (`image` in description) {
+            thumb_url = description.image.url;
+          } else {
+            thumb_url = previewImageUrl;
+          }
+
+          results.push({
             id: newId(),
-            type: "article",
+            type: `article`,
+            title,
+            url,
             hide_url: true,
-            url: description.link,
-            title: description.correctWriting,
-            description: description.text.replace(/\{\{correctWriting\}\} |<[\w\/]{0,}>/g, ""),
+            thumb_url,
+            description: text,
             input_message_content: {
               message_text: insertVariableName(description),
-              parse_mode: "HTML"
+              parse_mode: `HTML`
             },
-            thumb_url: ("image" in description) ? description.image.url : previewImageUrl
-          };
-        return result;
-      });
-    return answerInlineQuery(results, {
-      next_offset: "",
-      cache_time: 60
-    });
-  });
-} catch (error) {
-  console.log(error);
-}
+          });
+        })
+    }
+    answerInlineQuery(results, options);
+  } catch (error) {
+    logError(error);
+  }
+});
 
 bot.startPolling();
-console.log("Running @atthemeglossarybot…");
+console.log(`Running @${options.username}…`);
