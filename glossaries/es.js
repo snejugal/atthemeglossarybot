@@ -410,7 +410,7 @@ module.exports = {
     text: `{{correctWriting}} establece el icono en el botón "Nuevo mensaje".`,
     url: `http://telegra.ph/Variable-Controles-10-21#Botones-de-acción`
   }, 
-  chats_actionPressedBackground : {
+  chats_actionPressedBackground: {
     text: `{{correctWriting}} establece la superposición del botón "Nuevo mensaje" cuando se presiona. La superposición significa que puede configurar el canal alfa de esta variable a menos de 255, el botón no se vuelve transparente, pero mezclar dos colores. Superpone solo el fondo, pero no el ícono.`,
    url: `http://telegra.ph/Variable-Controles-10-21#Botones-de-acción`
   }, 
