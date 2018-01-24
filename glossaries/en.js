@@ -469,7 +469,91 @@ module.exports = {
       url: `http://telegra.ph/file/990707283fc6d4edb251d.png`,
       caption: `The blue circle shows “player_actionBarSelector”`
     },
-    url: `http://telegra.ph/Android-Theming-Variables-Glossary-In-app-Music-Player-10-01#Action-bar`
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-In-app-Music-Player-10-01#Action-bar`,
+  },
+  chats_message: {
+    text: `{{correctWriting}} sets the color of messages below the chat titles.`,
+    image: {
+      url: `http://telegra.ph/file/760da93bdf524a8dd6203.png`,
+      caption: `The blue underline shows “chats_message”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Chats-List-09-29#General-variables`
+  },
+  checkboxSquareUnchecked: {
+    text: `{{correctWriting}} sets the border of a checkbox when it's unchecked.`,
+    image: {
+      url: `http://telegra.ph/file/b06050d06c408d8d2d343.png`,
+      caption: `The red area shows “checkboxSquareUnchecked”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Controls-09-15#Checkbox`
+  },
+  divider: {
+    text: `{{correctWriting}} sets the color of gray lines that divide items of lists.`,
+    image: {
+      url: `http://telegra.ph/file/8f84bd8b814d72bd52e3a.png`,
+      caption: `The red area shows “divider”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Lists-09-26`
+  },
+  listSelectorSDK21: {
+    text: `{{correctWriting}} sets the color of the ripple effect when you tap a list item. There was also listSelector variable that worked only on Android 4.4 and below and has been removed.`,
+    image: {
+      url: `http://telegra.ph/file/8f84bd8b814d72bd52e3a.png`,
+      caption: `The blue area shows “listSelectorSDK21”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Lists-09-26`
+  },
+  emptyListPlaceholder: {
+    text: `{{correctWriting}} sets the color of placeholder text — the text that you see if there's no content — when you open an empty list. You can see it in Chat screen → Attach — Music if you don't have any music. If you do, you can move them from the Music folder for a moment and move them back after you're done.`,
+    image: {
+      url: `http://telegra.ph/file/8f84bd8b814d72bd52e3a.png`,
+      caption: `The green area shows “emptyListPlaceholder”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Lists-09-26`
+  },
+  avatar_text: {
+    text: `{{correctWriting}} sets the color on the avatars background.`,
+    url: `http://telegra.ph/Android-Theme-Variables-Guide-05-08#Avatars`
+  },
+  chats_date: {
+    text: `{{correctWriting}} sets the time or date color in the top right corner of a chat.`,
+    image: {
+      url: `http://telegra.ph/file/760da93bdf524a8dd6203.png`,
+      caption: `The orange underline shows “chats_date”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Chats-List-09-29#General-variables`
+  },
+  chats_nameMessage: {
+    text: `{{correctWriting}} sets the sender name color in groups.`,
+    image: {
+      url: `http://telegra.ph/file/760da93bdf524a8dd6203.png`,
+      caption: `The red underline shows “chats_nameMessage”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Chats-List-09-29#General-variables`
+  },
+  chats_actionMessage: {
+    text: `{{correctWriting}} sets the color of texts like “You joined the channel” and also attached message type (like photo, GIF, video etc) if the sender name <i>is</i> omitted.`,
+    image: {
+      url: `http://telegra.ph/file/760da93bdf524a8dd6203.png`,
+      caption: `The light green underline shows “chats_actionMessage”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Chats-List-09-29#General-variables`
+  },
+  chats_attachMessage: {
+    text: `{{correctWriting}} sets the attached message type like photo, video, audio etc if the sender name <i>is not</i> omitted.`,
+    image: {
+      url: `http://telegra.ph/file/760da93bdf524a8dd6203.png`,
+      caption: `The dark green line shows “chats_attachMessage”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Chats-List-09-29#General-variables`
+  },
+  chats_draft: {
+    text: `{{correctWriting}} sets the “Draft” text color that appears when you type some text and then close the chat without sending it.`,
+    image: {
+      url: `http://telegra.ph/file/760da93bdf524a8dd6203.png`,
+      caption: `The purple line shows ”chats_draft”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Chats-List-09-29#General-variables`
   },
   chats_message: {
     text: `{{correctWriting}} sets the color of messages below the chat titles.`,
