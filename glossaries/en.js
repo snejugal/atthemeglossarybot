@@ -631,4 +631,60 @@ module.exports = {
     },
     url: `http://telegra.ph/Android-Theming-Variables-Glossary-Chats-List-09-29#General-variables`
   },
+  stickers_menu: {
+    text: `{{correctWriting}} sets the color of three dots icon beside a sticker pack or a theme.`,
+    image: {
+      url: `http://telegra.ph/file/4d1c2db8c3dfc0d75ebfc.png`,
+      caption: `The blue area shows “stickers_menu”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Settings-10-01#Stickers-and-Themes-sections`
+  },
+  stickers_menuSelector: {
+    text: `{{correctWriting}} sets the ripple color when you tap the three dots icon.`,
+    image: {
+      url: `http://telegra.ph/file/4d1c2db8c3dfc0d75ebfc.png`,
+      caption: `The red area shows ”stickers_menuSelector”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Settings-10-01#Stickers-and-Themes-sections`
+  },
+  featuredStickers_addedIcon: {
+    text: `{{correctWriting}} sets the color of the check mark you can see beside an added sticker pack or selected theme.`,
+    image: {
+      url: `http://telegra.ph/file/b43d2a65635fe0a8506d7.png`,
+      caption: `The orange area shows “featuredStickers_addedIcon”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Settings-10-01#Stickers-and-Themes-sections`
+  },
+  featuredStickers_addButton: {
+    text: `{{correctWriting}} sets the background of the “Add” buttons.`,
+    image: {
+      url: `http://telegra.ph/file/b43d2a65635fe0a8506d7.png`,
+      caption: `The red area shows “featuredStickers_addButton”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Settings-10-01#Stickers-and-Themes-sections`
+  },
+  featuredStickers_addButtonSelected: {
+    text: `{{correctWriting}} sets the background of an “Add” button when you press the button.`,
+    image: {
+      url: `http://telegra.ph/file/b43d2a65635fe0a8506d7.png`,
+      caption: `The blue area shows “featuredStickers_addButtonSelected”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Settings-10-01#Stickers-and-Themes-sections`
+  },
+  featuredStickers_buttonText: {
+    text: `{{correctWriting}} sets the color of the “Add” or “Remove” (on chat emoji panel) text on buttons.`,
+    image: {
+      url: `http://telegra.ph/file/b43d2a65635fe0a8506d7.png`,
+      caption: `The green areas show “featuredStickers_buttonText”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Settings-10-01#Stickers-and-Themes-sections`
+  },
+  featuredStickers_buttonProgress: {
+    text: `{{correctWriting}} sets the color of the progress circle when a sticker pack is being added or removed (on chat emoji panel).`,
+    image: {
+      url: `http://telegra.ph/file/b43d2a65635fe0a8506d7.png`,
+      caption: `The purple area shows “featuredStickers_buttonProgress”`
+    },
+    url: `http://telegra.ph/Android-Theming-Variables-Glossary-Settings-10-01#Stickers-and-Themes-sections`
+  },
 }
